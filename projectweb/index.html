@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sport center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="libraries/owl.carousel.min.css">
+    <link rel="stylesheet" href="libraries/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: "vazirmatn";
+            src: url(./font/Vazirmatn-Medium.ttf);
+        }
+
+        body {
+            font-family: "vazirmatn";
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container:hover {
+            opacity: .9;
+            transition: opacity 0.5s linear;
+        }
+
+        .image-container .top-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: .75rem;
+            aspect-ratio: 10/6;
+            pointer-events: none;
+        }
+
+        .image-container .top-badge {
+            background-color: rgb(255, 255, 255);
+            left: 1rem;
+            top: 1rem;
+            position: absolute;
+        }
+
+        .image-container .discount {
+            background-color: rgb(255, 47, 47);
+            left: 0rem;
+            bottom: 1rem;
+            position: absolute;
+            border-radius: 0 .5rem .5rem 0;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .image-container .discount span {
+            padding-left: 1rem;
+        }
+
+        .image-container .vector {
+            right: 1rem;
+            top: 1rem;
+            position: absolute;
+        }
+
+        .image-container .vector img {
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .info-container {
+            margin-top: .7rem;
+        }
+
+        .info-container .price {
+            font-size: 1.2rem;
+        }
+
+        .info-container .price span {
+            color: lightgray;
+            font-size: 1rem;
+        }
+
+        .bottom-badges {
+            right: 1rem;
+            bottom: 1rem;
+            position: absolute;
+            font-weight: 100
+        }
+
+        .custom-card {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: .75rem;
+        }
+
+        .swiper-pagination-bullet {
+            background: #FFC700;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <header class="container">
+    
+        <section class="top-header">
+            <div class="right-top-header">
+                <img src="img/logo.jpg" width="100px" height="100px" alt="logo">
+                <input type="search" placeholder="جست و جو کنید " style="width: 500px;
+                height: 41px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                outline: none;
+                ">
+            </div>            
+            <div class="left-top-header" style="
+            display: flex;
+        ">
+                <div style="
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                width: 150px;
+                text-align: center;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                ">
+                    <img src="img/SVG.png" alt="" style="margin-left: 10px;">
+                    <span>ورود | ثبت‌نام</span>
+                </div>
+                <img src="img/Vertical Divider.png" alt="" style="margin-right: 10px;">
+                <img src="img/Link.png" alt="" style="margin-right: 10px;cursor: pointer;">
+            </div>
+        </section>
+        <section class="add-story" style="
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    ">
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>           
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+            <div class="storyone" >
+                <div style="display: flex;">
+                    <div class="profil-img"></div>
+                </div>
+            <div>
+                <p style="
+                font-size: 1rem;
+                font-family: 'circular';
+                margin-top: 11px;
+            "> مک بوک شارژ کنیم </p>
+            </div>
+            </div>
+        </section>
+
+    </header>
+
+
+    <section class="header-slider mt-2">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/بدن سازی.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/بدن سازی.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/بدن سازی.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+    </section>
+
+<section class="main-section container mt-4" >
+<div class="section-top" style="
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+">
+ <div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>مربی مشاوره </p>
+</div>        
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>برنامه بدنسازی</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>برنامه غذایی</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>فان و برترین های هفته </p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>بلیط مسابقات فوتبال</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>کلاس ورزشی</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>مشاهده اخبار ورزشی و نتایج  </p>
+</div>
+</div>
+       
+
+
+<div class="section-bottom mt-3" style="
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+">
+ <div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>بیمه ورزشی</p>
+</div>    
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>همبازی</p>
+</div>    
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>رزرو سالن</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>اسپوکلاب
+        بازی و امتیاز</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>اسپوجت</p>
+</div>
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>لوازم ورزشی</p>
+</div>
+
+<div class="main-one">
+    <img src="img/image 13.png" alt="">
+    <p>بیشتر</p>
+</div>
+</div>
+
+    </section>
+
+
+    <section class="tab mt-3 container" style="direction: rtl;" >
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">
+                <img src="img/stadium.png" alt="">
+                رزرو سالن</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">
+                <img src="img/moshaver.png" alt="">
+                مشاوران</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                <img src="img/classvarzeshi.png" alt="">
+                کلاس های ورزشی</button>
+
+                <div>
+                    <button style="
+                    margin-right: 693px;
+                    width: 152px;
+                    height: 50px;
+                    background-color:  #8BC441;
+                    margin-top: 10px;
+                    border-radius: 20px;
+                ">مشاهده همه</button>
+                </div>
+          </div>
+          
+          <div id="London" class="tabcontent tabcontentone">
+            <div class="row">
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>  
+    
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>  
+    
+                <div class="custom-card p-3" style="max-width: 27rem; margin: auto;">
+                    <a href="#" style="all: unset;">
+                        <div class="image-container">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/salon.jpeg" alt="" class="top-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" style="bottom: var(--swiper-pagination-bottom, 0px);"></div>
+                            </div>
+                            <h6 class="rounded-pill p-2 top-badge z-1">محبوب</h6>
+                            <span class="p-1 discount z-1"><span>۲۵%</span></span>
+                            <span class="px-1 vector z-1"><img id="vectorImage" src="./img/Vector.png" alt=""></span>
+                            <div class="bottom-badges z-1">
+                                <div class="card-text mb-1 overlay-content">
+                                    <span class="badge text-bg-success text-light rounded-pill">فوتسال</span>
+                                    <span class="badge text-bg-danger text-light rounded-pill">بسکتبال</span>
+                                </div>
+                                <div class="w-100 mb-2 overlay-content z-1">
+                                    <span class="badge bg-light text-dark rounded-pill">پارکینگ</span>
+                                    <span class="badge bg-light text-dark rounded-pill">رختکن</span>
+                                    <span class="badge bg-light text-dark rounded-pill">...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <h5 class="float-start mt-1"><img src="./img/star.png" alt="" class="px-1"><span>۳.۵</span></h5>
+                            <h3>سالن ایثار</h3>
+                            <h6>سجادشهر</h6>
+                            <h6 class="float-start price"><span>۳۰۰,۰۰۰</span> ۲۵۰,۰۰۰ تومان</h6>
+                            <h6 class="price">قیمت:</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+    </section>
+
+
+    <section class="slider-section container mt-3">
+        <div class="right-section-slider">
+            <p class="offer-text">پیشنهاد</p>
+            <p class="offer-text">شگفت</p>
+            <p class="offer-text">انگیز</p>
+            <div class="time-offer">
+                <div class="wrapper-time-offer">
+                    10
+                </div>
+                <span>:</span>
+                <div class="wrapper-time-offer">
+                    17
+                </div>
+                <span>:</span>
+                <div class="wrapper-time-offer">
+                    08
+                </div>
+            </div>
+            <img src="img/Amazing.svg.png" alt="" style="
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        ">
+            <p style="
+            text-align: center;
+            color: white;
+        ">مشاهده همه <img src="img/arrow.png" alt=""></p>
+        </div>
+        <div class="owl-carousel owl-theme" style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 300px;
+            overflow: hidden;
+        ">
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+            <div class="item">
+                <img src="img/dambel.png" width="100px" height="100px" alt="">
+                <div class="top-item-text">
+                    <p>دمبل دو کیلویی دو عددی</p>
+                </div>
+                <div class="bottom-item-text">
+                    <div class="bag-offer">۲۰٪</div>
+                    <span> ۱۳۰/۰۰۰<span>تومان</span></span>
+                </div>
+                <del>۲۰۰/۰۰۰</del>
+
+            </div>
+      
+          </div>
+    </section>
+
+      
+
+
+    <section class="mianbor mt-3 container">
+        <div class="mianbor-right">
+        </div>
+        <div class="mianbor-left">
+        </div>
+        <div class="mianbor-bottom mt-3">
+        </div>
+    </section>
+
+
+    <section class="tabligh mt-3 container">
+        <div class="tabligh-right">
+        </div>
+        <div class="tabligh-left">
+        </div>
+    </section>
+
+
+    <section class="spoclub mt-3 container">
+    </section>
+
+
+    <section class="maghalat mt-3 container">
+        <p style="font-size: 1.5rem;">مقالات ما</p>
+        <div class="box-article">
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+
+                <div class="card">
+                  <div class="card-header">
+                    <img src="img/article.png" alt="ballons" />
+                  </div>
+                  <div class="card-body">
+                    <span class="tag tag-purple">محبوب</span>
+                    <h4>
+                        تیم منتخب هفته سوم لیگ برتر
+                    </h4>
+                    <p>
+                     انتخاب سخت از بین سه گلر؛تیم منتخب هفته سوم لیگ برتربازیکنان برتر هفته از دل بازی‌های هیجان انگیز و هجومی و البته نمایش درخشان سه دروازه‌بان انتخاب شدند.
+                    </p>
+                    <div class="user" style="
+                    margin-right: -11px;
+                ">
+                      <img src="img/article.png" alt="user" />
+                      <div class="user-info">
+                        <h5>امیرحسن تفکر</h5>
+                        <small>شنبه ۱۰ شهریور</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header">
+                      <img src="img/article.png" alt="ballons" />
+                    </div>
+                    <div class="card-body">
+                      <span class="tag tag-purple">محبوب</span>
+                      <h4>
+                          تیم منتخب هفته سوم لیگ برتر
+                      </h4>
+                      <p>
+                       انتخاب سخت از بین سه گلر؛تیم منتخب هفته سوم لیگ برتربازیکنان برتر هفته از دل بازی‌های هیجان انگیز و هجومی و البته نمایش درخشان سه دروازه‌بان انتخاب شدند.
+                      </p>
+                      <div class="user" style="
+                      margin-right: -11px;
+                  ">
+                        <img src="img/article.png" alt="user" />
+                        <div class="user-info">
+                          <h5>امیرحسن تفکر</h5>
+                          <small>شنبه ۱۰ شهریور</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="img/article.png" alt="ballons" />
+                    </div>
+                    <div class="card-body">
+                      <span class="tag tag-purple">محبوب</span>
+                      <h4>
+                          تیم منتخب هفته سوم لیگ برتر
+                      </h4>
+                      <p>
+                       انتخاب سخت از بین سه گلر؛تیم منتخب هفته سوم لیگ برتربازیکنان برتر هفته از دل بازی‌های هیجان انگیز و هجومی و البته نمایش درخشان سه دروازه‌بان انتخاب شدند.
+                      </p>
+                      <div class="user" style="
+                      margin-right: -11px;
+                  ">
+                        <img src="img/article.png" alt="user" />
+                        <div class="user-info">
+                          <h5>امیرحسن تفکر</h5>
+                          <small>شنبه ۱۰ شهریور</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="card-header">
+                      <img src="img/article.png" alt="ballons" />
+                    </div>
+                    <div class="card-body">
+                      <span class="tag tag-purple">محبوب</span>
+                      <h4>
+                          تیم منتخب هفته سوم لیگ برتر
+                      </h4>
+                      <p>
+                       انتخاب سخت از بین سه گلر؛تیم منتخب هفته سوم لیگ برتربازیکنان برتر هفته از دل بازی‌های هیجان انگیز و هجومی و البته نمایش درخشان سه دروازه‌بان انتخاب شدند.
+                      </p>
+                      <div class="user" style="
+                      margin-right: -11px;
+                  ">
+                        <img src="img/article.png" alt="user" />
+                        <div class="user-info">
+                          <h5>امیرحسن تفکر</h5>
+                          <small>شنبه ۱۰ شهریور</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+    </section>
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted mt-3" >
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>با اسپورت سنتر همراه باشید </span>
+      </div>
+  
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+  
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: right;">
+            <h6 class="text-uppercase fw-bold mb-4">
+              اسپورت سنتر
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">اتاق خبر اسپورت سنتر</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">فروش در اسپورت سنتر</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">فرصت های شغلی</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">گزارش تخلف در اسپورت سنتر</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">تماس با اسپورت سنتر</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">درباره ما </a>
+              </p>
+          </div>
+
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: right;">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            خدمات مشتریان
+                        </h6>
+                        <p>
+                          <a href="#!" class="text-reset">پاسخ به پرسش های متداول</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">رویه های برگشت کالا</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">شرایط استفاده</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">حریم خصوصی</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">گزارش مشکل در سایت</a>
+                          </p>
+                      </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: right;">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            راهنمای استفاده   
+                        </h6>
+                        <p>
+                          <a href="#!" class="text-reset">نحوه ثبت سفارش</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">رویه ارسال سفارش</a>
+                        </p>
+                        <p>
+                          <a href="#!" class="text-reset">شیوه های پرداخت</a>
+                        </p>
+
+                      </div>
+
+  
+
+  
+
+  
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="text-align: right;">
+
+            <h6 class="text-uppercase fw-bold mb-4">همراه ما باشید </h6>
+            <span><img src="img/Telegram.png" width="40px" style="cursor: pointer;"  alt=""></span>
+            <span>
+              <img src="img/YouTube.png" width="40px" style="cursor: pointer;" alt="">
+            </span>
+            <span><img src="img/Twitter.png" width="40px" style="cursor: pointer;" alt=""></span>
+            <span><img src="img/Instagram.png" width="40px" style="cursor: pointer;" alt=""></span>
+            <h6 class="text-uppercase fw-bold mb-2 mt-3">با ثبت ایمیل از تخفیفات با خبر شوید </h6>
+            <input type="text" placeholder="ثبت ایمیل" style="
+            width: 200px;
+            height: 40px;
+            outline: none;
+            border-radius: 10px;
+            background-color: #ccc;
+            border: 1px solid #ccc;
+        ">
+            <button type="button" class="btn btn-secondary">ثبت</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+       2024 :
+      <a class="text-reset fw-bold">تمامی حقوق توسط گروه اسپورت سنتر محفوظ است</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="libraries/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    });
+</script>
+<script>
+    var vectorImage = document.querySelector('.vector img');
+    var originalSrc = vectorImage.src;
+    var newSrc = './Vector-Copy.png';
+    vectorImage.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (vectorImage.src === originalSrc) {
+            vectorImage.src = newSrc;
+        } else {
+            vectorImage.src = originalSrc;
+        }
+        vectorImage.classList.add('fade-in');
+    });
+</script>
+</body>
+</html>

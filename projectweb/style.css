@@ -1,0 +1,298 @@
+.main-one{
+    width: 100px;
+}
+
+.main-one p {
+    text-align: center;
+}
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  height: 65px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #8BC441;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.custom-card{
+    width: 300px;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.tabcontentone{
+    display: flex;
+}
+
+
+.profil-img {
+    background-image: url("./img/mac.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.2em solid #7D4C9E;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: inset 0px 0px 0px 5px white;
+  }
+
+
+
+  .spoclub{
+    background-image: url('./img/spoclub.png');
+    width: 100%;
+    height: 113px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .mianbor-right{
+    background-image: url('./img/بدن\ سازی.jpg');
+    width: 48%;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+
+  .mianbor-left{
+    background-image: url('./img/بدن\ سازی.jpg');
+    width: 48%;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+
+  .mianbor{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .mianbor-bottom{
+    background-image: url('./img/بدن\ سازی.jpg');
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .tabligh{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tabligh-right{
+    background-image: url('./img/tabligh.png');
+    width: 49%;
+    height: 253px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+
+  .tabligh-left{
+    background-image: url('./img/tabligh2.png ');
+    width: 49%;
+    height: 253px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tag-teal {
+  background-color: #47bcd4;
+}
+.tag-purple {
+  background-color: #5e76bf;
+}
+.tag-pink {
+  background-color: #cd5b9f;
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+.user {
+  display: flex;
+  margin-top: auto;
+}
+
+.user img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.user-info h5 {
+  margin: 0;
+}
+.user-info small {
+  color: #545d7a;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  font-size: 1.1rem;
+}
+
+
+.slider-section{
+  background-color: red;
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+.item{
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+
+.bag-offer{
+  background-color: #D32F2F;
+  width: 35px;
+    height: 35px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.bottom-item-text{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+del{
+  margin-right: 75px;
+}
+
+.slider-section{
+  display: flex;
+  align-items: center;
+}
+
+.time-offer{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.offer-text{
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  margin-top: -20px;
+}
+
+
+
+
+.wrapper-time-offer{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  margin-left: 10px;
+}
